@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [MovieController::class, 'homePage']);
+
 Route::post('/insertDataMovie', [MovieController::class, 'insertDataMovie']);
 Route::post('/insertDataActor', [MovieController::class, 'insertDataActor']);
 Route::get('/home', [MovieController::class, 'homePage']);
